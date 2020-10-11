@@ -1,0 +1,317 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>То-то дент.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'website/img/core-img/fav.png' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Иво Лола Рибар бр. 32 - Тетово"><i class="fa fa-map-marker"></i> <span>Иво Лола Рибар бр. 32 - Тетово</span></a>
+              <a href="mailto:to-todent@hotmail.com" data-toggle="tooltip" data-placement="bottom" title="to-todent@hotmail.com"><i class="fa fa-envelope"></i> <span>to-todent@hotmail.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://www.facebook.com/PZU-To-To-Dent-182286461968410/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/explore/locations/597168464/pzu-to-to-dent/?hl=en" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'doma' %}">Дома</a></li>
+                  <li><a href="{% url 'za_nas' %}">За нас</a></li>
+                  <li><a href="{% url 'uslugi' %}">Услуги</a></li>
+                  <li><a href="{% url 'cenovnik' %}">Ценовник</a></li> 
+                  <li><a href="{% url 'novosti_promocii' %}">Новости и промоции</a></li>   
+                  <li><a href="{% url 'kontakt' %}">Контакт</a></li>
+                </ul>
+              &nbsp &nbsp &nbsp<a class="nav-brand" href="{% url 'doma' %}"><img src="{% static 'website/img/core-img/mkd.png' %}" alt=""></a>
+          <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/br.png' %}" alt=""></a>
+          <a class="nav-brand" href="{% url 'shtepi' %}"><img src="{% static 'website/img/core-img/alb.png' %}" alt=""></a>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button 
+            <a href="#" class="btn dento-btn booking-btn">Booking Now</a>-->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+<h1></h1>
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Контакт</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url  'doma' %}"><i class="fa fa-home"></i>ДОМА</a></li>
+              <li class="breadcrumb-item active" aria-current="page">КОНТАКТ</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+
+{% if message_name %}
+<center><h3>ви благодариме {{ message_name }}!</h3>
+</br>
+<p>Вашата порака е испратена. Ќе Ве исконтактираме најбрзо што можеме.</p></center>>
+{% endif %}
+
+
+  <!-- ***** Contact Area Start ***** -->
+  <section class="dento-contact-area mt-50 mb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="google-maps mb-100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.4221833297606!2d20.96613901534856!3d42.01267476496083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353f0ef2c63b51d%3A0x5873c8494405751a!2sIvo%20Lola%20Ribar%2032%2C%20Tetov%C3%AB%201200!5e0!3m2!1sen!2smk!4v1590583788734!5m2!1sen!2smk"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-12 col-md-4">
+          <div class="contact-information">
+            <h5>Адреса</h5>
+            <p>Иво Лола Рибар бр. 32, Тетово</p>
+
+            <h5>Телефон</h5>
+            <p>077 827 188</p>
+        
+
+            <h5>Е-пошта</h5>
+            <p class="mb-0">to-todent@hotmail.com</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-12 col-md-8">
+          <div class="contact-form">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>КОНТАКТИРАЈТЕ НЕ {{ message_name }}</h2>
+              <div class="line"></div>
+            </div>
+            <!-- Form -->
+            <form action="{% url 'kontakt' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Вашето име">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Вашата е-пошта">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Порака"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn dento-btn">Ипратете порака</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'doma' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo_belo.png' %}" alt=""></a>
+            <p>Контактирајте не кога било во текот </br>на нашето работното време.</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i>Иво Лола Рибар бр. 32 - Тетово</p>
+              <p><i class="icon_phone"></i>077 827 188</p>
+              <p><i class="icon_mail"></i> to-todent@hotmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-7 col-sm-5 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Работно време</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Понеделник-Петок</span> <span>8.00-18.00</span></li>
+              <li><span>Сабота</span> <span>9.00-17.00</span></li>
+              <li><span>Недела</span> <span>10.00-17.00</span></li>
+              <li><span>Празници</span> <span>Затворено</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-6 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Линкови</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'doma' %}">Дома</a></li>
+                <li><a href="{% url 'za_nas' %}">За нас</a></li>
+                <li><a href="{% url 'uslugi' %}">Услуги</a></li>
+                <li><a href="{% url 'cenovnik' %}">Ценовник</a></li>
+                <li><a href="{% url 'novosti_promocii' %}">Новости</a></li>
+                <li><a href="{% url 'kontakt' %}">Контакт</a></li>
+             
+               
+           
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget-->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title 
+            <h5 class="widget-title">Newsletter</h5>
+
+            <p>We will send out weekly newest article and some great offers</p>
+            <!-- Newsletter Form 
+            <div class="footer-newsletter-form">
+              <form action="#" method="post">
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form>
+            </div>
+
+            <!-- Social Info -->
+            </br></br></br><div class="footer-social-info">
+              <a href="https://www.facebook.com/PZU-To-To-Dent-182286461968410" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/explore/locations/597168464/pzu-to-to-dent/?hl=en" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'webiste/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'webiste/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
